@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tu peso en un lugar donde pesas menos</title>
+  </head>
+  <body>
+    <h1>tu peso en otro planeta</h1>
+    <p>En la tierra pesas distintoque en marte o jupiter</p>
+    <script type="text/javascript">
+      var usuario = prompt("cual es tu peso?");
+      var planeta = parceInt(prompt("Elige tu planta \n1 es marte 2 es jupiterSS "));
+      var peso = parceInt(usuario);
+      var g_tierra = 9.8;
+      var g_marte = 3.7;
+      var g_jupiter = 24.8;
+      var pesoFinal;
+      if (planeta==1)
+      {
+        pesoFinal = peso * g_marte / g_tierra;
+        document.write("Tu peso en martes es <strong>" +pesoFinal+ " kilos</strong>");
+      }
+      else if (planeta==2)
+      {
+        pesoFinal= peso * g_jupiter /g_tierra;
+        document.write("Tu peso en jupiter es <strong>" +pesoFinal+ " kilos</strong>");
+      }
+    </script>
+  </body>
+</html>
